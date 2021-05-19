@@ -32,6 +32,7 @@ for (const folder of commandFolders) {
 }
 
 client.on('message', message => {
+	if (!message.guild) return
 	if (!message.content.startsWith(prefix) || message.author.bot) return;
 
 	const args = message.content.slice(prefix.length).trim().split(/ +/);
@@ -51,16 +52,6 @@ client.on('message', message => {
 		return message.channel.send(MissingPerm);
 	}
 
-	let GuildOnly = new Discord.MessageEmbed()
-	  .setColor("#ff0000")
-	  .setTitle("Guild Only!")
-	  .setDescription("You cannot use the command in DMs! This command is `GUILD_ONLY`!")
-	  .setTimestamp()
-	  .setFooter("Potion Bot ™️");
-
-	  if (command.guildOnly && message.channel.type === 'dm') {
-		return message.channel.send(GuildOnly);
-	}
 
 	
 try {
