@@ -1,0 +1,23 @@
+{
+  "name": "rms",
+  "version": "1.0.0",
+  "description": "Official RMS bot",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SinisterDeveloper/RMS-Bot.git"
+  },
+  "author": "SinisterDev",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SinisterDeveloper/RMS-Bot/issues"
+  },
+  "homepage": "https://github.com/SinisterDeveloper/RMS-Bot#readme",
+  "dependencies": {
+    "discord.js": "^12.5.3",
+    "ms": "^2.1.3"
+  }
+}
